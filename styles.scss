@@ -1,0 +1,116 @@
+$background: #1e1e1e;
+$background-second: #121214;
+$text: #E1E1E6;
+$orange-700: #F25F1D;
+$grey-200: #e1e1e6;
+$grey-300: #a8a8b3;
+$grey-400: #a7a7a7;
+$grey-500: #50555A;
+$grey-600: #29292e;
+$green-600: rgb(0, 240, 80);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(270deg,#09090a,#121214);
+    padding: 2rem 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.content-title {
+    text-align: center;
+
+    .main-container-title {
+        font-size: 3.5rem;
+        color: $orange-700;
+        font-weight: bold;
+    }
+
+    .main-container-subtitle {
+        font-size: 1.2rem;
+        color: $text;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+}
+
+.content-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    button {
+        transition: background-color 0.3s ease 0s, transform 0.3s ease 0s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+        background-color: $green-600;
+
+        font-size: 1rem;
+        font-weight: 600;
+        color: $background;
+
+        &:disabled {
+            cursor: not-allowed;
+            background: $grey-500;
+            color: $grey-400;
+        }
+    }
+
+    ul {
+        margin-top: 2rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        
+        li {
+            border: 1px solid $grey-600;
+            background-color: $background-second;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 340px;
+            height: auto;
+            text-align: center;
+
+            .content-description-job {
+                .title-job {
+                    font-size: 28px;
+                    line-height: 38px;
+                    color: $grey-200;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                }
+
+                .other-info {
+                    color: $grey-300;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 26px;
+                }
+
+                .link-job {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background-color: $orange-700;
+                    color: #FFF;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 0.5rem 2rem;
+                    // Por ser um elemento inline mudamos o display para aceitar margin-top
+                    display: inline-block;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
