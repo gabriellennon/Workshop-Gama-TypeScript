@@ -15,6 +15,9 @@ Esse projeto foi desenvolvido com o objetivo de praticar com os alunos do curso 
   - SCSS
   - TypeScript
 
+## :gear: Slides
+- [Slides Apresentação](https://docs.google.com/presentation/d/16vyV5W5QJ-NSSCAfWVQOilDn9-ajkhjmtxKnrT88Szg/edit?usp=sharing)
+
 ## :wave: Social
 
 Follow me @gabriellennon :wink:
